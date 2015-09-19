@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1">
+        <title>Multiplication Table</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    </head>
+    <body>
+        <table ng-controller="MultiplicationCtrl">
+            <tr ng-repeat="numberA in numbers">
+                <td ng-repeat="numberB in numbers">
+                    {{ numberA * numberB}}
+                </td>
+            </tr>
+        </table>
+
+        <script src="assets/libs/angular.1.4.5.min.js"></script>
+        <script src="assets/js/app.js"></script>
+    </body>
+</html>
